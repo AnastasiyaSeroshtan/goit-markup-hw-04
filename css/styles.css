@@ -15,6 +15,7 @@
   --border-img-color: #eeeeee;
   --footer-contact-link-color: #ffffff99;
   --btn-portfolio-bg-color: #f5f4fa;
+  --icon-social-color: #afb1b8;
 }
 
 body {
@@ -236,6 +237,16 @@ img {
   line-height: 1.17;
   text-align: center;
 }
+.benefits-list-item-icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  background: var(--btn-portfolio-bg-color);
+  border-radius: 4px;
+}
 
 .benefits-list-title {
   margin-bottom: 10px;
@@ -300,12 +311,83 @@ img {
 }
 
 .team-list-description {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   color: var(--secondary-text-color);
 }
+
+.team-list-social {
+  display: flex;
+  margin-right: 32px;
+  margin-left: 32px;
+  justify-content: space-between;
+}
+
+.team-list-social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-list-social-link:hover,
+.team-list-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.team-list-social-link-icon {
+  fill: var(--icon-social-color);
+}
+
+.team-list-social-link:hover .team-list-social-link-icon,
+.team-list-social-link:focus .team-list-social-link-icon {
+  fill: var(--light-text-color);
+}
+
 /*======= END TEAM =======*/
+
+/*======= START  CLIENTS =======*/
+.clients-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.clients-list {
+  display: flex;
+}
+
+.clients-list-item {
+  margin-right: 30px;
+}
+.clients-list-item:last-child {
+  margin-right: 0;
+}
+
+.clients-list-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-social-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-list-link:hover .clients-list-link-icon,
+.clients-list-link:focus .clients-list-link-icon {
+  fill: var(--accent-color);
+}
+
+.clients-list-link-icon {
+  fill: var(--icon-social-color);
+}
+/*======= END CLIENTS =======*/
 
 /*======= START FOOTER=======*/
 .footer {
