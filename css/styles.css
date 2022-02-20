@@ -199,10 +199,12 @@ img {
   cursor: pointer;
   color: var(--light-text-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--button-hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /*======= END HERO =======*/
 
@@ -242,10 +244,10 @@ img {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
+  border-radius: 4px;
   justify-content: center;
   align-items: center;
   background: var(--btn-portfolio-bg-color);
-  border-radius: 4px;
 }
 
 .benefits-list-title {
@@ -375,6 +377,7 @@ img {
   width: 170px;
   height: 92px;
   border: 1px solid var(--icon-social-color);
+  border-radius: 4px;
   justify-content: center;
   align-items: center;
 }
@@ -397,6 +400,11 @@ img {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer > .container {
+  display: flex;
+  align-items: baseline;
 }
 
 .logo-text-footer {
@@ -431,6 +439,44 @@ img {
 .footer-address-list-link:focus {
   color: var(--accent-color);
 }
+
+.subscription-wrapper {
+  margin-left: 70px;
+}
+
+.subscription {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+}
+
+.subscription-list {
+  display: flex;
+}
+
+.subscription-list-link {
+  margin-right: 10px;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.subscription-list-icon {
+  fill: var(--light-text-color);
+}
+
+.subscription-list-link:hover,
+.subscription-list-link:focus {
+  background-color: var(--accent-color);
+}
+
 /*======= END FOOTER=======*/
 
 /*============ START PORTFOLIO============*/
@@ -468,6 +514,8 @@ img {
 .portfolio-list-btn:focus {
   color: var(--light-text-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-cards-list {
